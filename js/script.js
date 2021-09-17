@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function printMessage(msg){
 	var div = document.createElement('div'); //został utworzony div, którego nie widać na stronie//
 	div.innerHTML = msg; //ten div będzie w sobie zawierał jakąś wiadomość, tag <div>jakaś wiadomość</div>, w tym divie moze się wyświetlać komunikat ////
@@ -80,3 +81,14 @@ console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
  
 
+=======
+function printMessage('msg'){
+	var div = document.createElement('div');
+	div.innerHTML = msg;
+	document.getElementById('messages').appendChild(div);
+}
+
+function clearMessages(){
+	document.getElementById('messages').innerHTML = '';
+}
+>>>>>>> ab90e22321db14142f441b29dadb39dd2d5881bf
