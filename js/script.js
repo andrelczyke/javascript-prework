@@ -96,7 +96,7 @@ var argButtonName, buttonTest, buttonRock, buttonPaper, buttonScissors;
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-  playerMove = (argButtonName);
+  playerMove = argButtonName;
   console.log('ruch gracza to: ' + playerMove);
   randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
