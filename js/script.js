@@ -1,5 +1,5 @@
 function printMessage(msg){
-	var div = document.createElement('div'); //został utworzony div, którego nie widać na stronie//
+	const div = document.createElement('div'); //został utworzony div, którego nie widać na stronie//
 	div.innerHTML = msg; //ten div będzie w sobie zawierał jakąś wiadomość, tag <div>jakaś wiadomość</div>, w tym divie moze się wyświetlać komunikat ////
 	document.getElementById('messages').appendChild(div); //document.-odwołanie do dokumentu; .dołącz kolejne dziecko do elementu <div>//
 }
@@ -10,7 +10,7 @@ function clearMessages(){
 
 
 // //komputer//
-// var computerMove, randomNumber;
+// const computerMove, randomNumber;
 // randomNumber = Math.floor(Math.random() * 3 + 1);
 // console.log('wylosowana liczba to: ' + randomNumber);
 // if (randomNumber == '1') {
@@ -26,7 +26,7 @@ function clearMessages(){
 
 
 // //gracz//
-// var playerMove, playerInput;
+// const playerMove, playerInput;
 // playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.'); //prompt otwiera okienka
 // console.log('Wpisana odpowiedź to: ' + playerInput);
 // if (playerInput == '1') {
@@ -42,7 +42,7 @@ function clearMessages(){
 
 // ////////////////////////////////////////////////////////////////////////////
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+const argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 /**
  * Pobieranie nazwy ruchu
@@ -89,7 +89,7 @@ function displayResult(argPlayerMove, argComputerMove) { //przymuje ruch gracza 
 
  
 
-var argButtonName, buttonTest, buttonRock, buttonPaper, buttonScissors;
+const argButtonName, buttonTest, buttonRock, buttonPaper, buttonScissors;
 /**
  * Describe this function...
  */
